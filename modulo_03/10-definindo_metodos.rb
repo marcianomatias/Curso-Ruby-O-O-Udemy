@@ -1,13 +1,14 @@
 class Pessoa
-    def gritar
-       puts "Grrrhhhhhh!!!!" 
+    def gritar (texto)
+       "Gritando... #{texto}" 
     end
 
-    def agradecer
-        puts "Obrigado!"
+    def agradecer(texto = "Obrigado!")
+         texto
     end
     
 end
 obj1 = Pessoa.new
-obj1.gritar
-obj1.agradecer
+puts obj1.gritar("Grrrhhhhhh!!!!")
+result = obj1.agradecer
+puts result
